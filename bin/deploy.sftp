@@ -1,0 +1,2 @@
+lcd build
+put -rf . public_html

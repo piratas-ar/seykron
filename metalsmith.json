@@ -1,0 +1,28 @@
+{
+  "source": "./src",
+  "destination": "./build",
+  "metadata": {
+    "author": "seykron",
+    "title": "seykron",
+    "description": "para hablar sobre cosas"
+  },
+  "plugins": {
+    "metalsmith-drafts": {},
+    "metalsmith-markdown": {},
+    "metalsmith-permalinks": {
+      "pattern": ":title"
+    },
+    "metalsmith-collections": {
+      "posts": {
+        "sortBy": "publishDate",
+        "reverse": true
+      }
+    },
+    "metalsmith-clean-css": {
+       "files": "src/**/*.css"
+     },
+    "metalsmith-layouts": {
+      "engine": "handlebars"
+    }
+  }
+}

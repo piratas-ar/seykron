@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{title}}</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="{{author}}">
+    <meta name="description" content="{{description}}">
+
+    <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Merriweather" />
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="/"><img class="avatar fr" src="assets/images/avatar.png"></a>
+        <a href="/">{{title}}</a>
+      </h1>
+      <h2>{{description}}</h2>
+    </header>
+    <main>
+      {{#each collections.posts}}
+        <article>
+          <h1>{{title}}</h1>
+          {{{contents}}}
+        </article>
+      {{/each}}
+    </main>
+    <footer>
+      <p>
+        <small>
+          <a rel="license" href="http://endefensadelsl.org/ppl_deed_es.html">
+            <img class="avatar" src="assets/images/nc.png">
+            todos los artículos se encuentran bajo la licencia de producción
+            de pares
+          </a>
+        </small>
+      </p>
+    </footer>
+  </body>
+</html>
