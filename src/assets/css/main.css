@@ -6,6 +6,18 @@ body {
   font-family: 'Merriweather', serif;
 }
 
+nav {
+  width: 50%;
+  margin: auto;
+  padding: 2px 0;
+}
+
+nav li {
+  display: inline;
+  padding: 5px;
+  float: right;
+}
+
 header {
   width: 50%;
   margin: 50px auto;
@@ -72,12 +84,15 @@ h1 a { color: #333;}
 
 footer p { margin-bottom: 0 }
 
-nav li {
-  display: inline;
-  padding: 5px;
-  float: right;
+blockquote {
+  font-style: italic;
+  margin: 0 40px;
 }
 
-nav {
-  margin-bottom: 40px;
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
 }

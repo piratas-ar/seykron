@@ -8,10 +8,10 @@
     {{> header}}
     <main>
       {{#each collections.posts}}
-        <article>
-          <h1><a href="{{path}}">{{title}}</a></h1>
-          {{{contents}}}
-        </article>
+        <ul>
+          <li><h2><a href="{{rootPath}}{{path}}">{{title}}</a></h2>
+            <time class="small gray">{{{publishDate}}}</time></li>
+        </ul>
       {{/each}}
     </main>
     {{> footer}}

@@ -1,2 +1,1 @@
-lcd build
-put -rf . public_html
+put -r build/* public_html/

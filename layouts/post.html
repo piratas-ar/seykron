@@ -1,9 +1,17 @@
 <!doctype html>
 <html>
   <head>
-    <title>{{title}}</title>
+    <title>{{title}} - {{description}}</title>
+    {{> meta}}
   </head>
   <body>
-    {{{contents}}}
+    {{> header}}
+    <main>
+      <article>
+        <h1><a href="{{rootPath}}{{path}}">{{title}}</a></h1>
+          {{{contents}}}
+      </article>
+    </main>
+    {{> footer}}
   </body>
 </html>

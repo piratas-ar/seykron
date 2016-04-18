@@ -9,6 +9,7 @@
   "plugins": {
     "metalsmith-drafts": {},
     "metalsmith-markdown": {},
+    "metalsmith-rootpath": {},
     "metalsmith-permalinks": {
       "pattern": ":title"
     },
@@ -22,7 +23,9 @@
        "files": "src/**/*.css"
      },
     "metalsmith-layouts": {
-      "engine": "handlebars"
-    }
+      "engine": "handlebars",
+      "partials": "partials"
+    },
+    "metalsmith-moment": ["publishDate", "updateDate"]
   }
 }

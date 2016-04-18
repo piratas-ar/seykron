@@ -5,4 +5,7 @@ if [ "$BLOG_HOST" == "" ]; then
   exit;
 fi
 
-sftp -b bin/deploy.sftp $BLOG_HOST
+mkdir -p tmp
+sshfs -o sshfs_sync -o sync_readdir -o sync_read $BLOG_HOST:public_html tmp
+rsync -rv build/ tmp
+fusermount -u tmp
